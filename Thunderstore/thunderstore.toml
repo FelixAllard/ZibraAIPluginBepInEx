@@ -1,0 +1,44 @@
+[config]
+schemaVersion = "0.0.1"
+
+[general]
+repository = "https://thunderstore.io"
+
+[package]
+description = "Adds Zibra's Smoke, fire and Liquid to the game! THIS IS AN API"
+websiteUrl = "https://github.com/FelixAllard/SCP457LC"
+containsNsfwContent = false
+[package.dependencies]
+BepInEx-BepInExPack = "5.4.2100"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./Packages"
+
+[[build.copy]]
+source = "../bin/Release/netstandard2.1/TheWeavers.ZibraFireSmokeAndLiquid.dll"
+target = "Plugin/"
+
+[[build.copy]]
+source = "../DLLs/Bas"
+target = "ZibraBasePlugin/"
+
+[[build.copy]]
+source = "../DLLs/Liquid"
+target = "ZibraLiquid/"
+
+[[build.copy]]
+source = "../DLLs/Fire"
+target = "ZibraSmokeAndFire/"
+
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "/"
+
+[publish]
+communities = [ "lethal-company", ]
+[publish.categories]
+# Get the list of categories from https://thunderstore.io/api/experimental/community/lethal-company/category/
+lethal-company = [ "bepinex", "clientside", "serverside", "monsters", "mods", ]
