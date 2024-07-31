@@ -7,7 +7,7 @@
 		<!-- This is the name of your mod. This will be used by tcli when building our Thunderstore package. -->
     <Product>ZibraFireSmokeAndLiquid</Product>
     <!-- Change to whatever version you're currently on. This will be used by tcli when building our Thunderstore package. -->
-    <Version>1.0.1</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <!-- Thunderstore CLI stuff -->
@@ -76,6 +76,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="src\Configuration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TheWeavers.ZibraFireSmokeAndLiquid">
+      <HintPath>..\..\SCP457\Plugin\Dlls\TheWeavers.ZibraFireSmokeAndLiquid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZibraAI.ZibraEffects">
+      <HintPath>..\..\SCP457\Plugin\Dlls\ZibraAI.ZibraEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="ZibraAI.ZibraEffects.Liquid">
+      <HintPath>..\..\SCP457\Plugin\Dlls\ZibraAI.ZibraEffects.Liquid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZibraAI.ZibraEffects.Liquid.Bridge">
+      <HintPath>..\..\SCP457\Plugin\Dlls\ZibraAI.ZibraEffects.Liquid.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="ZibraAI.ZibraEffects.Samples">
+      <HintPath>..\..\SCP457\Plugin\Dlls\ZibraAI.ZibraEffects.Samples.dll</HintPath>
+    </Reference>
+    <Reference Include="ZibraAI.ZibraEffects.SmokeAndFire">
+      <HintPath>..\..\SCP457\Plugin\Dlls\ZibraAI.ZibraEffects.SmokeAndFire.dll</HintPath>
+    </Reference>
+    <Reference Include="ZibraAI.ZibraEffects.SmokeAndFire.Bridge">
+      <HintPath>..\..\SCP457\Plugin\Dlls\ZibraAI.ZibraEffects.SmokeAndFire.Bridge.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <!-- Allows us to use Rpc methods. See https://github.com/EvaisaDev/UnityNetcodePatcher -->
