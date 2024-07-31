@@ -87,14 +87,14 @@ namespace Zibra {
 
         private void InjectNativeFileIntoGame()
         {
-            string targetPath = "Lethal Company_Data/Plugins/ZibraNative";
+            string targetPath = "Lethal Company_Data/Plugins/x86_64";
             if (!Directory.Exists(Path.Combine(Paths.GameRootPath, targetPath)))
             {
                 Directory.CreateDirectory(Path.Combine(Paths.GameRootPath, targetPath));
             }
 
-            File.Copy(Path.Combine(Zibra.Plugin.pluginPath, "ZibraLiquidNative_Win.dll"), targetPath, true);
-            File.Copy(Path.Combine(Zibra.Plugin.pluginPath, "ZibraSmokeAndFireNative_Win.dll"), targetPath, true);
+            File.Copy(Path.Combine(Zibra.Plugin.pluginPath, "ZibraLiquidNative_Win.dll"), Path.Combine(targetPath, "ZibraLiquidNative_Win.dll"), true);
+            File.Copy(Path.Combine(Zibra.Plugin.pluginPath, "ZibraSmokeAndFireNative_Win.dll"), Path.Combine(targetPath, "ZibraSmokeAndFireNative_Win.dll"), true);
 
             Logger.LogInfo($"Successfully injected assemblies to {targetPath}");
         }

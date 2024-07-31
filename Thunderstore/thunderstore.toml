@@ -6,7 +6,7 @@ repository = "https://thunderstore.io"
 
 [package]
 description = "Adds Zibra's Smoke, fire and Liquid to the game! THIS IS AN API"
-websiteUrl = "https://github.com/FelixAllard/SCP457LC"
+websiteUrl = "https://github.com/FelixAllard/ZibraAIPluginBepInEx"
 containsNsfwContent = false
 [package.dependencies]
 BepInEx-BepInExPack = "5.4.2100"

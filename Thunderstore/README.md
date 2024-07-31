@@ -36,5 +36,13 @@ This project is provided as-is for personal use and does not imply any warranty 
 For support and inquiries, please refer to the official [Zibra AI support channels](https://zibra.ai/support).
 
 ---
+## Mod Uninstall Remnants
+When desinstalling the mod, it will still ahve some files on your computer that were moved in order for them to be properly loaded by the game! They are located in your game files at the following location :
+``Lethal Company\Lethal Company_Data\Plugins\x86_64``
+Here are their name :
+- ZibraLiquidNative_Win.dll
+- ZibraSmokeAndFireNative_Win.dll
+
+If you don't delete them, it's no big deal really, they only provide helper functions and do NOT use your resources
 
 
